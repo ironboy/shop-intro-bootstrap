@@ -1,5 +1,11 @@
 // 1. Our overrides — must come before Bootstrap.
-@import 'variables';
+// To see all variables that we "change"/override
+// look in this file
+// node_modules/bootstrap/scss/bootstrap/variables.scss
+// navigate quickly to it by ctrl clicking the second import
+// and the ctrl-clicking the variables import
+
+@import 'variable-overrides';
 
 // 2. Bootstrap.
 @import 'bootstrap/scss/bootstrap';

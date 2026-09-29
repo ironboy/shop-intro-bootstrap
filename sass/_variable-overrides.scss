@@ -8,5 +8,9 @@
 // how rounded corners, font, font-sizes, colors, how many cols the grid system uses etc
 
 $primary: #6f42c1;
-$border-radius: 0.5rem;
+$secondary: rgb(68, 144, 78);
+$border-radius: 7px;
 $font-family-sans-serif: Verdana, system-ui, sans-serif;
+
+// don't use smooth scrolling since it interferes with form validation
+$enable-smooth-scroll: false;

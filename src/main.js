@@ -1,13 +1,10 @@
 import '../sass/main.scss';
 
-// One import loads all of Bootstrap's JavaScript. After this every
-// component works by itself through its data-bs-* attributes in the html
-// (navbar toggler, offcanvas, dropdowns, modals, tooltips...).
-// The bootstrap object is only needed if you want to control
-// a component from your own JavaScript, like below.
+// Import Bootstrap's JavaScript
 import * as bootstrap from 'bootstrap';
 
+// Import or JavaScript that creates the cart content
 import './fe26-shop.js';
 
 // Following a link inside the cart (#checka-ut) should close the cart
-addEventListener('hashchange', () => bootstrap.Offcanvas.getInstance('#varukorg')?.hide());
+addEventListener('hashchange', () => Offcanvas.getInstance('#varukorg')?.hide());

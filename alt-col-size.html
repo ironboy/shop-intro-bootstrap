@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thomas shop</title>
+  <title>Thomas shop - alt-col-size</title>
   <!-- empty icon: stops the browser from asking for favicon.ico (404 in the console) -->
   <link rel="icon" href="data:,">
 </head>
@@ -35,57 +35,31 @@
 
   <main class="container flex-grow-1 py-4">
     <article id="start">
-      <div class="row">
-        <div class="col-12 col-md-8">
-          <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <a href="#produkt-badanka">
-                  <img src="https://placehold.co/600x400" class="d-block w-100" alt="Badanka">
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="#produkt-slagpase">
-                  <img src="https://placehold.co/600x400" class="d-block w-100" alt="Slagpåse">
-                </a>
-              </div>
-              <div class="carousel-item">
-                <a href="#produkt-jolt-cola">
-                  <img src="https://placehold.co/600x400" class="d-block w-100" alt="Jolt Cola">
-                </a>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        </div>
-        <div class="col-12 col-md-4 pt-4 pt-md-0">
-          <h2>Start</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure in maiores molestias consequatur ut
-            quibusdam nesciunt dolor illo nihil corporis impedit, voluptas dicta a quod, accusantium sequi animi quas?
-          </p>
-          <p>Corrupti mollitia, dignissimos corporis atque odio deserunt doloribus aliquam reiciendis eius molestias est
-            nisi vero! Iste ad asperiores possimus. Voluptatibus excepturi eius deleniti labore! Corrupti laborum
-            necessitatibus sed aut perspiciatis.</p>
-          <p>Deleniti accusantium soluta debitis facilis. Mollitia, culpa sequi! Quos, quasi. Magni facilis nulla atque,
-            ipsam ducimus iste voluptates praesentium cum perferendis nesciunt, pariatur possimus voluptate illum
-            debitis,
-            eos eaque reiciendis.</p>
-        </div>
-      </div>
-
+      <h2>Start</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti iure in maiores molestias consequatur ut
+        quibusdam nesciunt dolor illo nihil corporis impedit, voluptas dicta a quod, accusantium sequi animi quas?</p>
+      <p>Corrupti mollitia, dignissimos corporis atque odio deserunt doloribus aliquam reiciendis eius molestias est
+        nisi vero! Iste ad asperiores possimus. Voluptatibus excepturi eius deleniti labore! Corrupti laborum
+        necessitatibus sed aut perspiciatis.</p>
+      <p>Deleniti accusantium soluta debitis facilis. Mollitia, culpa sequi! Quos, quasi. Magni facilis nulla atque,
+        ipsam ducimus iste voluptates praesentium cum perferendis nesciunt, pariatur possimus voluptate illum debitis,
+        eos eaque reiciendis.</p>
     </article>
 
+    <!-- 
+         Here we set the column widths in a different way
+         than in index.html
+         Using the fact that we can say how many of 12 "slots"
+         in a row a column should take up...
+
+         Advantage:
+         You can have different widths (on same screen size)
+         for the different columns inside a row
+    -->
     <article id="produkter">
       <h2 class="mb-4">Våra produkter</h2>
-      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-        <section class="col">
+      <div class="row">
+        <section class="col-12 col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body">
               <h3 class="card-title">Badanka</h3>
@@ -104,7 +78,7 @@
           </div>
         </section>
 
-        <section class="col">
+        <section class="col-12 col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body">
               <h3 class="card-title h5">Slagpåse</h3>
@@ -122,7 +96,7 @@
           </div>
         </section>
 
-        <section class="col">
+        <section class="col-12 col-md-6 col-lg-4">
           <div class="card h-100">
             <div class="card-body">
               <h3 class="card-title h5">Jolt-Cola</h3>
@@ -163,54 +137,6 @@
       </form>
       <p class="mt-4"><a href="#produkter">Tillbaka till produktlistan</a></p>
     </article>
-
-    <article id="produkt-slagpase">
-      <h2>Slagpåse</h2>
-      <p>Dicta consequatur saepe quisquam, doloremque aspernatur rem! Doloribus perferendis similique modi cumque
-        incidunt quaerat molestiae voluptatum. Ab, necessitatibus autem officiis, corporis sint in consectetur quas
-        culpa, eligendi ipsum doloremque recusandae!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil esse debitis laboriosam a tempore minima
-        quisquam impedit quidem! Unde, harum qui quaerat repellendus placeat nulla voluptas iusto nemo voluptatum.</p>
-      <p>Aliquam praesentium animi ex in autem magni. Incidunt porro accusamus facilis corrupti delectus quo? Blanditiis
-        accusantium magni id minus laboriosam. Quod unde, laudantium earum inventore doloremque dolorum dolore vitae
-        dignissimos.</p>
-      <p>Voluptatem dolor porro ipsum accusantium numquam voluptates temporibus eum! Velit facere quis animi tempore
-        adipisci, recusandae mollitia numquam saepe sint inventore eius, natus accusamus voluptate, earum ipsam
-        aspernatur asperiores tempora.</p>
-
-      <p><b>Pris:</b> 110 kr</p>
-      <!-- Same data-label as in the product list = same product, the quantity is kept in sync -->
-      <form class="input-group w-auto" data-label="Slagpåse" data-price="110">
-        <label class="input-group-text" for="antal-slagpase-detalj">Antal</label>
-        <input id="antal-slagpase-detalj" class="form-control" name="quantity" type="number" value="0" min="0"
-          max="999">
-      </form>
-      <p class="mt-4"><a href="#produkter">Tillbaka till produktlistan</a></p>
-    </article>
-
-    <article id="produkt-jolt-cola">
-      <h2>Jolt Cola</h2>
-      <p>Voluptatem dolor porro ipsum accusantium numquam voluptates temporibus eum! Velit facere quis animi tempore
-        adipisci, recusandae mollitia numquam saepe sint inventore eius, natus accusamus voluptate, earum ipsam
-        aspernatur asperiores tempora.</p>
-      <p>Dicta consequatur saepe quisquam, doloremque aspernatur rem! Doloribus perferendis similique modi cumque
-        incidunt quaerat molestiae voluptatum. Ab, necessitatibus autem officiis, corporis sint in consectetur quas
-        culpa, eligendi ipsum doloremque recusandae!</p>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nihil esse debitis laboriosam a tempore minima
-        quisquam impedit quidem! Unde, harum qui quaerat repellendus placeat nulla voluptas iusto nemo voluptatum.</p>
-      <p>Aliquam praesentium animi ex in autem magni. Incidunt porro accusamus facilis corrupti delectus quo? Blanditiis
-        accusantium magni id minus laboriosam. Quod unde, laudantium earum inventore doloremque dolorum dolore vitae
-        dignissimos.</p>
-      <p><b>Pris:</b> 25 kr</p>
-      <!-- Same data-label as in the product list = same product, the quantity is kept in sync -->
-      <form class="input-group w-auto" data-label="Jolt Cola" data-price="25">
-        <label class="input-group-text" for="antal-jolt-cola-detalj">Antal</label>
-        <input id="antal-jolt-cola-detalj" class="form-control" name="quantity" type="number" value="0" min="0"
-          max="999">
-      </form>
-      <p class="mt-4"><a href="#produkter">Tillbaka till produktlistan</a></p>
-    </article>
-
 
     <article id="checka-ut">
       <h2>Dina adressuppgifter</h2>
